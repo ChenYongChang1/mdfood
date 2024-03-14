@@ -1,0 +1,90 @@
+:root {
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+div,
+p,
+span {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.dd-flex {
+  display: flex;
+}
+
+.dd-flex-start {
+  justify-content: flex-start;
+}
+
+.dd-flex-center {
+  justify-content: center;
+}
+
+.dd-flex-end {
+  justify-content: flex-end;
+}
+
+.dd-flex-space {
+  justify-content: space-between;
+}
+.dd-flex-around {
+  justify-content: space-around;
+}
+
+.dd-align-center {
+  align-items: center;
+}
+
+.dd-align-start {
+  align-items: flex-start;
+}
+
+.dd-align-end {
+  align-items: end;
+}
+
+.dd-flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.dd-flex-column {
+  flex-direction: column;
+}
+
+.dd-flex-column-reverse {
+  flex-direction: column-reverse;
+}
+
+.dd-flex-warp {
+  flex-wrap: wrap;
+}
+
+.dd-overflow-hidden {
+  overflow: hidden;
+}
+
+.dd-flex-1 {
+  flex: 1;
+}
+
+.dd-flex-2 {
+  flex: 2;
+}
+
+.dd-flex-3 {
+  flex: 3;
+}
+
+.dd-flex-4 {
+  flex: 4;
+}
