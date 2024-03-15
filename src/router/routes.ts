@@ -1,4 +1,4 @@
-import r_rlcg29hirh from '@/views/en/index.vue'
-import r_p95b73g3f8 from '@/views/index.vue'
-const __routes = [{"path":"/en","name":"_src_views_en_layout","children":[{"path":"/en/","name":"_src_views_en_indexvue","meta":{},"component":r_rlcg29hirh}]},{"path":"/","name":"_src_views_indexvue","meta":{},"component":r_p95b73g3f8}]
+import r_nludcociea from '@/views/en/index.vue'
+import r_v8ahvu1mffa from '@/views/index.vue'
+const __routes = [{"path":"/en","name":"_src_views_en_layout","children":[{"path":"/en/","name":"_src_views_en_indexvue","meta":{},"component":r_nludcociea}]},{"path":"/","name":"_src_views_indexvue","meta":{},"component":r_v8ahvu1mffa}]
 export default __routes

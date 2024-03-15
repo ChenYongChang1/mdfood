@@ -1,28 +1,33 @@
 <template>
   <div class="dd-comments">
-    <div class="comment-row dd-flex dd-flex-space left">
+    <div
+      v-for="(item, index) in reviews"
+      :key="`comm-${index}`"
+      class="comment-row dd-flex dd-flex-space"
+      :class="(index + 1) % 2 === 0 ? 'right' : 'left'"
+    >
       <div class="user-cover">
-        <img src="@/assets/images/user-cover.svg" alt="" />
+        <img :src="item.headImage" alt="" />
       </div>
       <div class="user-content">
         <div class="sanjiao">
           <img src="@/assets/images/sanjiao.svg" alt="" />
         </div>
         <div class="wujiao dd-flex">
-          <img src="@/assets/images/wujiaoxing.svg" alt="" />
-          <img src="@/assets/images/wujiaoxing.svg" alt="" />
-          <img src="@/assets/images/wujiaoxing.svg" alt="" />
-          <img src="@/assets/images/wujiaoxing.svg" alt="" />
-          <img src="@/assets/images/wujiaoxing.svg" alt="" />
+          <img
+            v-for="(citem, cindex) in item.star"
+            :key="`start-${cindex}`"
+            src="@/assets/images/wujiaoxing.svg"
+            alt=""
+          />
         </div>
         <div class="text-content">
-          宝藏APP，怎么才发现
-          规划很合理，用了2周，减重3公斤，给了我极大的信心，会继续使用下去，减肥塑性增肌人群都适合，都快去冲。
+          {{ item.content }}
         </div>
-        <div class="by-user">— 来自AppStore用户 看鲁班七号超神</div>
+        <div class="by-user">— 来自AppStore用户 {{ item.nickName }}</div>
       </div>
     </div>
-    <div class="comment-row dd-flex dd-flex-space right">
+    <!-- <div class="comment-row dd-flex dd-flex-space right">
       <div class="user-cover">
         <img src="@/assets/images/user-cover.svg" alt="" />
       </div>
@@ -42,12 +47,15 @@
         </div>
         <div class="by-user">— 来自AppStore用户 胖达PandaQ</div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script lang="ts" setup>
 defineOptions({ name: "DdComment" });
+import { useI18n } from "vue-i18n";
+const i18n = useI18n();
+const { reviews } = window.__config[i18n.locale.value];
 </script>
 
 <style lang="scss" scoped>
@@ -75,6 +83,7 @@ defineOptions({ name: "DdComment" });
     height: 7.4vw;
     border-radius: 50%;
     position: relative;
+    overflow: hidden;
     top: 3.6vw;
   }
   .user-content {

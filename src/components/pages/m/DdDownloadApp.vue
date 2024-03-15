@@ -1,14 +1,17 @@
 <template>
-  <div class="download-box">
-    <div class="download">
+  <div v-if="btn.showDownLoadBtn" class="download-box">
+    <a class="download" :href="btn.downLoadUrl" target="_blank">
       {{ $t("common.立即领取减肥计划") }}
       <img class="to-right" src="@/assets/images/right.svg" alt="" />
-    </div>
+    </a>
   </div>
 </template>
 
 <script lang="ts" setup>
 defineOptions({ name: "DdDownloadApp" });
+import { useI18n } from "vue-i18n";
+const i18n = useI18n();
+const btn = window.__config[i18n.locale.value];
 </script>
 
 <style lang="scss" scoped>
@@ -42,6 +45,8 @@ defineOptions({ name: "DdDownloadApp" });
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    outline: none;
+    text-decoration: none;
     .to-right {
       width: 4.8vw;
     }
