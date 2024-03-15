@@ -1,10 +1,35 @@
 <template>
   <div class="dd-comments">
-    <div class="comment-row dd-flex dd-flex-space">
+    <div class="comment-row dd-flex dd-flex-space left">
       <div class="user-cover">
         <img src="@/assets/images/user-cover.svg" alt="" />
       </div>
       <div class="user-content">
+        <div class="sanjiao">
+          <img src="@/assets/images/sanjiao.svg" alt="" />
+        </div>
+        <div class="wujiao dd-flex">
+          <img src="@/assets/images/wujiaoxing.svg" alt="" />
+          <img src="@/assets/images/wujiaoxing.svg" alt="" />
+          <img src="@/assets/images/wujiaoxing.svg" alt="" />
+          <img src="@/assets/images/wujiaoxing.svg" alt="" />
+          <img src="@/assets/images/wujiaoxing.svg" alt="" />
+        </div>
+        <div class="text-content">
+          宝藏APP，怎么才发现
+          规划很合理，用了2周，减重3公斤，给了我极大的信心，会继续使用下去，减肥塑性增肌人群都适合，都快去冲。
+        </div>
+        <div class="by-user">— 来自AppStore用户 看鲁班七号超神</div>
+      </div>
+    </div>
+    <div class="comment-row dd-flex dd-flex-space right">
+      <div class="user-cover">
+        <img src="@/assets/images/user-cover.svg" alt="" />
+      </div>
+      <div class="user-content">
+        <div class="sanjiao">
+          <img src="@/assets/images/sanjiao.svg" alt="" />
+        </div>
         <div class="wujiao dd-flex">
           <img src="@/assets/images/wujiaoxing.svg" alt="" />
           <img src="@/assets/images/wujiaoxing.svg" alt="" />
@@ -33,6 +58,18 @@ defineOptions({ name: "DdComment" });
   .comment-row {
     margin-bottom: 9.3vw;
   }
+  .right {
+    flex-direction: row-reverse;
+    .sanjiao {
+      transform: rotateY(180deg);
+      right: -14px;
+    }
+  }
+  .left {
+    .sanjiao {
+      left: -14px;
+    }
+  }
   .user-cover {
     width: 7.4vw;
     height: 7.4vw;
@@ -47,6 +84,12 @@ defineOptions({ name: "DdComment" });
     border-radius: 8px;
     padding: 2.6vw;
     background-color: white;
+    position: relative;
+    .sanjiao {
+      position: absolute;
+      top: 3vw;
+      width: 14px;
+    }
     .wujiao {
       margin-bottom: 2.1vw;
       > img {

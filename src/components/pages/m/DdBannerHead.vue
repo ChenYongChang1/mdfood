@@ -3,7 +3,9 @@
     <dd-module-card title="减肥食谱">
       <div class="content">
         <div class="dd-flex content-title">
-          <div class="head-icon"></div>
+          <div class="head-icon">
+            <img src="@/assets/images/app-icon.svg" alt="" />
+          </div>
           <div class="head-title-name">
             {{ $t("common.小主轻断食") }}
           </div>
@@ -55,7 +57,6 @@ import DdModuleCard from "../common/DdModuleCard.vue";
     width: 17.1vw;
     height: 17.1vw;
     border-radius: 2.4vw;
-    background: red;
   }
   .head-title-name {
     height: 17.1vw;
