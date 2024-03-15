@@ -62,7 +62,7 @@ import DdModuleCard from "../common/DdModuleCard.vue";
     height: 17.1vw;
     line-height: 17.1vw;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 4.8vw;
     padding-left: 4vw;
   }
 }
@@ -72,7 +72,7 @@ import DdModuleCard from "../common/DdModuleCard.vue";
 .content-text {
   width: 62.9vw;
   color: $desc-color;
-  font-size: 14px;
+  font-size: 3.73vw;
   font-weight: 400;
 }
 .xiaoju {

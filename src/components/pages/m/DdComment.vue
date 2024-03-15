@@ -97,14 +97,14 @@ defineOptions({ name: "DdComment" });
       }
     }
     .text-content {
-      font-size: 14px;
+      font-size: 3.73vw;
       color: #4f4426;
       margin-bottom: 3.2vw;
     }
     .by-user {
       color: #a49f92;
       text-align: right;
-      font-size: 12px;
+      font-size: 3.2vw;
     }
   }
 }

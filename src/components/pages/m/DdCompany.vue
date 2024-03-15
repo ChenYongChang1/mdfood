@@ -13,7 +13,7 @@ defineOptions({ name: "DdCompany" });
   text-align: center;
   font-weight: 500;
   color: #d1eb98;
-  font-size: 14px;
+  font-size: 3.73vw;
 }
 .margin-top {
   margin: 2vw 0 9.3vw 0;

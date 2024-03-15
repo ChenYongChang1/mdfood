@@ -32,7 +32,7 @@ defineOptions({ name: "DdDownloadApp" });
     position: absolute;
     background: linear-gradient(93.62deg, #5be260 4.47%, #4fdc54 92.28%);
     border-radius: 13.3vw;
-    font-size: 20px;
+    font-size: 5.33vw;
     color: white;
     font-weight: 500;
     display: flex;

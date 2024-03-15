@@ -72,7 +72,7 @@ const featureList = [
 .en {
   .pd {
     .head-title {
-      font-size: 16px;
+      font-size: 4.26vw;
       word-break: break-word;
       padding-left: 10vw;
       line-height: 15px;
@@ -95,7 +95,7 @@ const featureList = [
     right: 2.3vw;
     border-radius: 3.67vw 3.67vw 0 3.67vw;
     padding: 0 4.5vw 0 1vw;
-    font-size: 22px;
+    font-size: 5.86vw;
     font-weight: 600;
     color: white;
     line-height: 12vw;
@@ -168,7 +168,7 @@ const featureList = [
       width: 100%;
       padding: 0 8px;
       color: #333;
-      font-size: 14px;
+      font-size: 3.73vw;
       text-align: center;
     }
   }

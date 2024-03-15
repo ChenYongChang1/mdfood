@@ -62,7 +62,7 @@ defineProps({
 .en {
   .banner-head {
     .head-title {
-      font-size: 14px;
+      font-size: 3.73vw;
       font-weight: 600;
       word-break: break-word;
       padding-right: 10vw;
@@ -105,7 +105,7 @@ defineProps({
     top: -3vw;
     border-radius: 3.67vw 3.67vw 3.67vw 0;
     padding: 0 1vw 0 4.5vw;
-    font-size: 22px;
+    font-size: 5.86vw;
     font-weight: 600;
     color: white;
     line-height: 12vw;
