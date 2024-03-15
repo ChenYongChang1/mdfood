@@ -59,6 +59,18 @@ defineProps({
     display: none;
   }
 }
+.en {
+  .banner-head {
+    .head-title {
+      font-size: 14px;
+      font-weight: 600;
+      word-break: break-word;
+      padding-right: 10vw;
+      line-height: 15px;
+      padding-top: 2vw;
+    }
+  }
+}
 .banner-head {
   position: relative;
   .close-icon {
@@ -106,6 +118,7 @@ defineProps({
     background-image: url("@/assets/images/banner.svg");
     background-repeat: no-repeat;
     padding-top: 12vw;
+    background-size: 100%;
   }
   &::after {
     content: "";
