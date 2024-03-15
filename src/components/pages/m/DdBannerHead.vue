@@ -28,10 +28,11 @@ import DdModuleCard from "../common/DdModuleCard.vue";
 .pd {
   padding: 0 5.3vw;
   padding-top: 10vw;
+  margin-bottom: 10vw;
 }
 .content {
   width: 100%;
-  min-height: 64vw;
+  min-height: 54vw;
   background: linear-gradient(180deg, #fef4d0 0%, rgba(255, 255, 255, 0) 100%);
 
   position: relative;
@@ -76,7 +77,12 @@ import DdModuleCard from "../common/DdModuleCard.vue";
 .xiaoju {
   position: absolute;
   right: 0;
-  bottom: 17%;
+  bottom: 3%;
   width: 20vw;
+}
+.en {
+  .xiaoju {
+    bottom: 17%;
+  }
 }
 </style>

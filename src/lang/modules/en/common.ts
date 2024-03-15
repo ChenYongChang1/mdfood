@@ -12,5 +12,5 @@ export default {
   断食知识: "Fasting knowledge",
   立即领取减肥计划: "立即领取减肥计划",
   小主轻断食描述文案:
-    "小主驾到～私人减肥计划请查收！这是一款专为胖友们设计的轻断食减肥APP，经典的轻断食减肥计划、国人专属饮食食谱，快来体验吧～",
+    "The little master is here~Please check the private weight loss plan! This is a light fasting weight loss APP specially designed for fat friends. It has a classic light fasting weight loss plan and Chinese exclusive diet recipes. Come and experience it~",
 };

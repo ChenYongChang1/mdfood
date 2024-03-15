@@ -28,7 +28,7 @@ defineOptions({ name: "DdComment" });
 <style lang="scss" scoped>
 .dd-comments {
   width: 100%;
-  padding: 0 5.2vw 6.1vw 5.2vw;
+  padding: 0 5.2vw;
   margin-bottom: 10vw;
   .comment-row {
     margin-bottom: 9.3vw;

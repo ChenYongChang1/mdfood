@@ -2,6 +2,9 @@
   <div class="pd">
     <div class="head-title">{{ $t(`common.宝藏功能`) }}</div>
     <div class="feature-img">
+      <div class="head-img">
+        <img src="@/assets/images/right-header.svg" alt="" />
+      </div>
       <div class="close-icon dd-flex">
         <div class="ff"></div>
         <div class="fe"></div>
@@ -80,7 +83,7 @@ const featureList = [
 }
 .pd {
   padding: 0 2.1vw;
-  padding-top: 10vw;
+  padding-top: 21vw;
   position: relative;
   .head-title {
     width: 42.9vw;
@@ -89,7 +92,7 @@ const featureList = [
     z-index: 0;
     background: linear-gradient(92.44deg, #5aee5f 0.93%, #0fc615 95.81%);
     top: 10vw;
-    right: 5.5vw;
+    right: 2.3vw;
     border-radius: 3.67vw 3.67vw 0 3.67vw;
     padding: 0 4.5vw 0 1vw;
     font-size: 22px;
@@ -101,11 +104,24 @@ const featureList = [
 }
 .feature-img {
   width: 100%;
-  background-image: url("@/assets/images/more-feature.svg");
-  background-size: 100%;
-  background-repeat: no-repeat;
+  // background-image: url("@/assets/images/more-feature.svg");
+  // background-size: 100%;
+  // background-repeat: no-repeat;
+  background: linear-gradient(180deg, #fef7db 0%, #fefcf8 100%);
+  box-shadow: 0px 4px 12px 0px #0000000f;
+  box-shadow: 0px -4px 12px 0px #0000000f;
+  border: solid 2px #fff;
   position: relative;
   z-index: 1;
+  border-radius: 0 4vw 4vw 4vw;
+  margin-bottom: 10vw;
+  .head-img {
+    position: absolute;
+    top: -9vw;
+    width: 101%;
+    left: -2px;
+    z-index: -1;
+  }
 
   .close-icon {
     position: absolute;
@@ -133,7 +149,7 @@ const featureList = [
   }
 }
 .feature-list {
-  padding: 20vw 3.2vw 0 3.2vw;
+  padding: 6vw 3.2vw 0 3.2vw;
   .feature-item {
     width: 25%;
     margin-bottom: 6.67vw;
