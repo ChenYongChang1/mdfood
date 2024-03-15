@@ -58,6 +58,13 @@ export default defineConfig({
       indexPath: join(__dirname, "dist", "index.html"),
       routes: ["/", "/en"],
       staticDir: join(__dirname, "dist"),
+      postProcessHtml: (renderedRoute) => {
+        renderedRoute.html = renderedRoute.html.replace(
+          "</head>",
+          '<script src="/config.js"></script></head>'
+        );
+        return renderedRoute;
+      },
       minify: {
         collapseBooleanAttributes: true,
         collapseWhitespace: true,
