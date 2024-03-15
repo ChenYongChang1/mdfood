@@ -15,7 +15,7 @@ declare module "vue-router" {
 }
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory("/"),
   // history: createWebHashHistory(),
   routes,
 });
@@ -23,22 +23,22 @@ const router = createRouter({
 router.beforeEach(async (to, from, next) => {
   // console.log("全局路由前置守卫：to,from\n", to, from);
 
-  // 设置页面标题
-  document.title = (to.meta.title as string) || import.meta.env.VITE_APP_TITLE;
-  // 设置描述
-  const descriptionTag = document.querySelector('meta[name="description"]');
-  if (descriptionTag) {
-    descriptionTag.setAttribute(
-      "content",
-      (to.meta.description as string) || ""
-    );
-  }
+  // // 设置页面标题
+  // document.title = (to.meta.title as string) || import.meta.env.VITE_APP_TITLE;
+  // // 设置描述
+  // const descriptionTag = document.querySelector('meta[name="description"]');
+  // if (descriptionTag) {
+  //   descriptionTag.setAttribute(
+  //     "content",
+  //     (to.meta.description as string) || ""
+  //   );
+  // }
 
-  // 设置关键字
-  const keywordsTag = document.querySelector('meta[name="keywords"]');
-  if (keywordsTag) {
-    keywordsTag.setAttribute("content", (to.meta.keywords as string) || "");
-  }
+  // // 设置关键字
+  // const keywordsTag = document.querySelector('meta[name="keywords"]');
+  // if (keywordsTag) {
+  //   keywordsTag.setAttribute("content", (to.meta.keywords as string) || "");
+  // }
   next();
 });
 
