@@ -34,35 +34,35 @@ import ViteImg from "../common/ViteImg.vue";
 import DdComment from "./DdComment.vue";
 const featureList = [
   {
-    icon: "1.svg",
+    icon: "1.png",
     name: "定制计划",
   },
   {
-    icon: "2.svg",
+    icon: "2.png",
     name: "断食追踪",
   },
   {
-    icon: "3.svg",
+    icon: "3.png",
     name: "食谱推荐",
   },
   {
-    icon: "4.svg",
+    icon: "4.png",
     name: "热量查询",
   },
   {
-    icon: "5.svg",
+    icon: "5.png",
     name: "喝水提醒",
   },
   {
-    icon: "6.svg",
+    icon: "6.png",
     name: "饮食记录",
   },
   {
-    icon: "7.svg",
+    icon: "7.png",
     name: "数据分析",
   },
   {
-    icon: "8.svg",
+    icon: "8.png",
     name: "断食知识",
   },
 ];
@@ -156,6 +156,7 @@ const featureList = [
     .feature-row {
       width: 13.86vw;
       height: 13.86vw;
+      position: relative;
       // background: white;
       border-radius: 15px;
       margin-bottom: 2.6vw;
