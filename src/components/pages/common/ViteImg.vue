@@ -53,19 +53,22 @@ const getAssetsFile = (url: string) => {
   } else if (imgSuffix === "gif") {
     modules = import.meta.glob("/src/assets/**/*.gif", { eager: true });
   }
-  // const modules = import.meta.globEager("/src/assets/**/*.png"); // import(`@/assets/imgs/home/${borderStatusMap[props.status]}.png`);
+
   return modules[realPath]?.default;
 };
 const imgSrc = ref("");
 const getImgSrc = () => {
   const image = new Image();
-  image.src = getAssetsFile(props.src);
+  const src = getAssetsFile(props.src);
+  image.src = src;
   image.onload = () => {
-    imgSrc.value = image.src; // 图片加载完成后将地址设置给 imgSrc
+    imgSrc.value = src; // 图片加载完成后将地址设置给 imgSrc
   };
 };
 onMounted(() => {
-  getImgSrc();
+  if (props.cover) {
+    getImgSrc();
+  }
 });
 // const imgSrc = computed(() => {
 // 	return ref(props.src.replace('@', '/src'))
