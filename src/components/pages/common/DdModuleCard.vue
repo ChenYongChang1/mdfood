@@ -33,7 +33,7 @@ defineProps({
   .head-title {
   }
   .inner-content {
-    background-image: url("@/assets/images/banner.svg");
+    background-image: url("@/assets/images/banner.png");
   }
   .close-icon {
     right: 4vw;

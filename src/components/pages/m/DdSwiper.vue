@@ -21,7 +21,10 @@
         v-for="(item, index) in swiperList"
         :key="`swiper-${index}`"
       >
-        <vite-img :src="item"></vite-img>
+        <vite-img
+          :src="item"
+          :cover="item.replace('/images/', '/images/copy/')"
+        ></vite-img>
       </swiper-slide>
     </swiper>
   </div>

@@ -156,10 +156,10 @@ const featureList = [
     .feature-row {
       width: 13.86vw;
       height: 13.86vw;
-      background: white;
+      // background: white;
       border-radius: 15px;
       margin-bottom: 2.6vw;
-      padding: 1vw;
+      // padding: 1vw;
       display: flex;
       justify-content: center;
       align-items: center;

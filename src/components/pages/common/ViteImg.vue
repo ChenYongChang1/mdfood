@@ -1,12 +1,14 @@
 <template>
   <img
     v-bind="$attrs"
-    :src="getAssetsFile(src)"
+    :src="imgSrc || getAssetsFile(cover)"
     :style="{ margin, width, height }"
   />
 </template>
 
 <script lang="ts" setup>
+import { onMounted, ref } from "vue";
+
 defineOptions({ name: "ViteImg" });
 interface modules {
   [k: string]: any;
@@ -32,6 +34,10 @@ const props = defineProps({
     type: String,
     default: "",
   },
+  cover: {
+    type: String,
+    default: "",
+  },
 });
 const getAssetsFile = (url: string) => {
   if (url.startsWith("http")) return url;
@@ -50,6 +56,17 @@ const getAssetsFile = (url: string) => {
   // const modules = import.meta.globEager("/src/assets/**/*.png"); // import(`@/assets/imgs/home/${borderStatusMap[props.status]}.png`);
   return modules[realPath]?.default;
 };
+const imgSrc = ref("");
+const getImgSrc = () => {
+  const image = new Image();
+  image.src = getAssetsFile(props.src);
+  image.onload = () => {
+    imgSrc.value = image.src; // 图片加载完成后将地址设置给 imgSrc
+  };
+};
+onMounted(() => {
+  getImgSrc();
+});
 // const imgSrc = computed(() => {
 // 	return ref(props.src.replace('@', '/src'))
 // }) // new URL(props.src, import.meta.url).href

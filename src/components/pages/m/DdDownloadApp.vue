@@ -30,9 +30,11 @@ const btn = window.__config[i18n.locale.value];
   position: relative;
   margin-bottom: 13.3vw;
   .download {
-    width: 100%;
-    height: 100%;
-    position: absolute;
+    width: 69.6vw;
+    height: 16vw;
+    bottom: 12vw;
+    position: fixed;
+    z-index: 11;
     background: linear-gradient(93.62deg, #5be260 4.47%, #4fdc54 92.28%);
     border-radius: 13.3vw;
     font-size: 5.33vw;

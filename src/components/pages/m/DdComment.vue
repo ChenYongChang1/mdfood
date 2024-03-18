@@ -79,8 +79,8 @@ const { reviews } = window.__config[i18n.locale.value];
     }
   }
   .user-cover {
-    width: 7.4vw;
-    height: 7.4vw;
+    width: 9.5vw;
+    height: 9.5vw;
     border-radius: 50%;
     position: relative;
     overflow: hidden;
@@ -88,7 +88,7 @@ const { reviews } = window.__config[i18n.locale.value];
   }
   .user-content {
     border: solid 1px #b2fe59;
-    width: calc(100% - 7.4vw - 5.3vw);
+    width: calc(100% - 9.5vw - 5.3vw);
     min-height: 100px;
     border-radius: 8px;
     padding: 2.6vw;

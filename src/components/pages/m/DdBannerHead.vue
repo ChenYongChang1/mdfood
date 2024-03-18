@@ -71,7 +71,7 @@ import DdModuleCard from "../common/DdModuleCard.vue";
 }
 .content-text {
   width: 62.9vw;
-  color: $desc-color;
+  color: $base-color;
   font-size: 3.73vw;
   font-weight: 400;
 }
