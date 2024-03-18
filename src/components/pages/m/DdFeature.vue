@@ -125,8 +125,8 @@ const featureList = [
 
   .close-icon {
     position: absolute;
-    top: 9vw;
-    left: 7vw;
+    top: -4vw;
+    left: 4vw;
     z-index: 3;
     > div {
       width: 10px;
