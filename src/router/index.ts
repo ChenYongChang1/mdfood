@@ -24,7 +24,7 @@ router.beforeEach(async (to, from, next) => {
   // console.log("全局路由前置守卫：to,from\n", to, from);
 
   // // 设置页面标题
-  // document.title = (to.meta.title as string) || import.meta.env.VITE_APP_TITLE;
+  document.title = "小主轻断食-168断食、不禁食、健康减肥减脂食谱、饮食记录"; // (to.meta.title as string) || import.meta.env.VITE_APP_TITLE;
   // // 设置描述
   // const descriptionTag = document.querySelector('meta[name="description"]');
   // if (descriptionTag) {
